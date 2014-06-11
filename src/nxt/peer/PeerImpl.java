@@ -3,11 +3,13 @@ package nxt.peer;
 import nxt.Account;
 import nxt.BlockchainProcessor;
 import nxt.Constants;
+import nxt.Nxt;
 import nxt.TransactionType;
 import nxt.util.Convert;
 import nxt.util.CountingInputStream;
 import nxt.util.CountingOutputStream;
 import nxt.util.Logger;
+
 import org.json.simple.JSONObject;
 import org.json.simple.JSONStreamAware;
 import org.json.simple.JSONValue;
@@ -359,6 +361,12 @@ final class PeerImpl implements Peer {
             version = (String)response.get("version");
             platform = (String)response.get("platform");
             shareAddress = Boolean.TRUE.equals(response.get("shareAddress"));
+            float ver = Float.valueOf(version);
+            float currver = Float.valueOf(Nxt.VERSION);
+            if(ver>currver){
+            	 setState(State.NON_CONNECTED);
+            }
+            
             if (announcedAddress == null) {
                 setAnnouncedAddress(peerAddress);
                 Logger.logDebugMessage("Connected to peer without announced address, setting to " + peerAddress);
