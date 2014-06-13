@@ -31,7 +31,7 @@
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                    	<li class="dropdown"><a href="#" style="font-weight:bold;" data-toggle="modal" data-target="#send_money_modal">Send NXT</a></li>
+                    	<li class="dropdown"><a href="#" style="font-weight:bold;" data-toggle="modal" data-target="#send_money_modal">Send NTX</a></li>
                     	<li class="dropdown"><a href="#" style="font-weight:bold;" data-toggle="modal" data-target="#send_message_modal">Send Message</a></li>
 	                    <li class="dropdown"><a href="#" style="font-weight:bold;" data-toggle="modal" data-target="#generate_token_modal">Generate Token</a></li>
 						<li class="dropdown"><a href="#" style="font-weight:bold;" class="goto-page" data-page="settings">Settings</a></li>
@@ -40,9 +40,9 @@
                                 <i class="fa fa-question-circle"></i>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                            	<li><a role="menuitem" tabindex="-1" href="http://nxt.org/" target="_blank">Nxt.org</a></li>
-								<li><a role="menuitem" tabindex="-1" href="https://nxtforum.org/" target="_blank">Nxt Forum</a></li>
-								<li><a role="menuitem" tabindex="-1" href="https://wiki.nxtcrypto.org/" target="_blank">Nxt Wiki</a></li>
+                            	<li><a role="menuitem" tabindex="-1" href="http://www.ntxcoin.org/" target="_blank">NTXcoin Web site</a></li>
+								<li><a role="menuitem" tabindex="-1" href="http://bbs.ntxcoin.com/" target="_blank">NTX Forum</a></li>
+								<li><a role="menuitem" tabindex="-1" href="https://wiki.nxtcrypto.org/" target="_blank">NTX Wiki</a></li>
 								<li><a role="menuitem" tabindex="-1" href="https://wiki.nxtcrypto.org/wiki/Nxt_client_interface" target="_blank">Interface Tutorial</a></li>
 								<li><a role="menuitem" tabindex="-1" href="https://wiki.nxtcrypto.org/wiki/Asset_Exchange" target="_blank">Asset Exchange Tutorial</a></li>
 							</ul>
@@ -73,7 +73,7 @@
 										<li role="presentation" class="copy_link"><a role="menuitem" tabindex="-1" href="#" data-type="account_rs">Copy Account ID</a></li>
 										<li role="presentation" class="copy_link"><a role="menuitem" tabindex="-1" href="#" data-type="account_id">Copy Numeric Account	ID</a></li>
 										<li role="presentation" class="remote_only copy_link"><a role="menuitem" tabindex="-1" href="#" data-type="message_link">Copy 'Send Message' Link</a></li>
-										<li role="presentation" class="remote_only copy_link"><a role="menuitem" tabindex="-1" href="#" data-type="send_link">Copy 'Send Nxt' Link</a></li>
+										<li role="presentation" class="remote_only copy_link"><a role="menuitem" tabindex="-1" href="#" data-type="send_link">Copy 'Send Ntx' Link</a></li>
 									</ul>
 								</div>
 	                            <a href="#" id="forging_indicator" class="forging" style="display:none;font-size:13px;"><i class="fa fa-circle" style="font-size:12px;"></i> <span>Forging</span></a>
@@ -115,7 +115,7 @@
 	                <section class="content-header"><h1>Dashboard</h1></section>
 	                
 	                <section class="content">
-	                	<div class="alert-danger alert alert-no-icon" id="dashboard_message" style="display:none;padding:5px;padding-left:5px;margin-bottom:15px;"><b>Warning!</b>: Your account does not have a public key! This means it's not as protected as other accounts. You must make an outgoing transaction to fix this issue (<a href="#" data-toggle="modal" data-target="#send_message_modal">send a message</a>, <a href="#" data-toggle="modal" data-target="#register_alias_modal">buy an alias</a>, <a href="#" data-toggle="modal" data-target="#send_money_modal">send Nxt</a>, ...)</div>
+	                	<div class="alert-danger alert alert-no-icon" id="dashboard_message" style="display:none;padding:5px;padding-left:5px;margin-bottom:15px;"><b>Warning!</b>: Your account does not have a public key! This means it's not as protected as other accounts. You must make an outgoing transaction to fix this issue (<a href="#" data-toggle="modal" data-target="#send_message_modal">send a message</a>, <a href="#" data-toggle="modal" data-target="#register_alias_modal">buy an alias</a>, <a href="#" data-toggle="modal" data-target="#send_money_modal">send Ntx</a>, ...)</div>
 	               
 	                    <div class="row">
 	                        <div class="col-lg-3 col-xs-6">
@@ -532,7 +532,7 @@
 							        <th>Percentage</th>
 							        <th>Lowest Ask</th>
 							        <th>Highest Bid</th>
-							        <th>Value in NXT</th>
+							        <th>Value in NTX</th>
 							        <th>Transfer</th>
 							    </tr>
 							    </thead>
@@ -610,13 +610,13 @@
 							                	<div class="col-md-6">
 								                	<div class="box box-solid box-info collapsed-box" id="buy_asset_box">
 								                		<div class="box-header" style="background-color:#DFF0D9;color: #48AB6C;">
-								                	   	<h3 class="box-title">Buy <span class="asset_name"></span> with NXT</h3>
+								                	   	<h3 class="box-title">Buy <span class="asset_name"></span> with NTX</h3>
 								                	       <div class="box-tools pull-right">
 								                	       	<button class="btn btn-info btn-sm" style="background-color: #48AB6C"><i class="fa fa-plus"></i></button>
 								                	        </div>
 								                	    </div>
 								                	    <div class="box-body no-padding" style="display:none">
-								                	    	<div style="background-color:#DFF0D9;color: #666;padding-left:10px;padding-right: 10px;padding-top: 0px;padding-bottom:3px;" id="buy_automatic_price"><strong>Balance</strong>: <span id="your_nxt_balance"></span> NXT</div>
+								                	    	<div style="background-color:#DFF0D9;color: #666;padding-left:10px;padding-right: 10px;padding-top: 0px;padding-bottom:3px;" id="buy_automatic_price"><strong>Balance</strong>: <span id="your_nxt_balance"></span> NTX</div>
 								                	    
 									                	    <form role="form" class="form-horizontal" style="padding: 10px;;max-width:350px;margin-left:auto;margin-right:auto;">
 									                	    	<div style="margin-left:-20px">
@@ -634,7 +634,7 @@
 										                	    		<div class="col-sm-9">
 										                	    			<div class="input-group">
 										                	    				<input id="buy_asset_price" type="text" value="0" name="buy_asset_price" class="form-control" data-type="buy" />
-										                	    				<span class="input-group-addon">NXT / <span class="asset_name"></span></span>
+										                	    				<span class="input-group-addon">NTX / <span class="asset_name"></span></span>
 										                	    			</div>
 										                	    		</div>
 										                	    	</div>
@@ -643,7 +643,7 @@
 										                	    		<div class="col-sm-9">
 										                	    			<div class="input-group">
 										                	    				<input type="text" name="buy_asset_total" id="buy_asset_total" readonly value="0" class="form-control disabled" />
-										                	    				<span class="input-group-addon">NXT</span>
+										                	    				<span class="input-group-addon">NTX</span>
 										                	    			</div>
 										                	    		</div>
 										                	    	</div>
@@ -652,14 +652,14 @@
 										                	    		<div class="col-sm-9">
 										                	    			<div class="input-group">
 										                	    				<input type="text" id="buy_asset_fee" name="buy_asset_fee" value="1" class="form-control" />
-										                	    				<span class="input-group-addon">NXT</span>
+										                	    				<span class="input-group-addon">NTX</span>
 										                	    			</div>
 										                	    		</div>
 										                	    	</div>
 										                	    	<div class="form-group form-group-last">
 										                	    		<div class="col-sm-3"></div>
 										                	    		<div class="col-sm-9">
-										                	    			<button type="button" class="btn btn-primary btn-lg btn-block" id="buy_asset_button" data-toggle="modal" data-target="#asset_order_modal" data-asset="" data-type="Buy">Buy (NXT → <span class="asset_name"></span>)</button>
+										                	    			<button type="button" class="btn btn-primary btn-lg btn-block" id="buy_asset_button" data-toggle="modal" data-target="#asset_order_modal" data-asset="" data-type="Buy">Buy (NTX 鈫�<span class="asset_name"></span>)</button>
 										                	    		</div>
 										                	    	</div>
 									                	    	</div>
@@ -694,7 +694,7 @@
 							                    <div class="col-md-6">
 								                    <div class="box box-solid box-info collapsed-box" id="sell_asset_box">
 								                        <div class="box-header" style="background:#F2DEDE;color:#ED4348;">
-								                            <h3 class="box-title">Sell <span class="asset_name"></span> for NXT</h3>
+								                            <h3 class="box-title">Sell <span class="asset_name"></span> for NTX</h3>
 								                            <div class="box-tools pull-right">
 								                                <button class="btn btn-info btn-sm" style="background-color: #ED4348"> <i class="fa fa-plus"></i></button>
 								                            </div>
@@ -718,7 +718,7 @@
 										                        		<div class="col-sm-9">
 										                        			<div class="input-group">
 										                        				<input id="sell_asset_price" type="text" value="0" name="sell_asset_price" class="form-control" data-type="sell" />
-										                        				<span class="input-group-addon">NXT / <span class="asset_name"></span></span>
+										                        				<span class="input-group-addon">NTX / <span class="asset_name"></span></span>
 										                        			</div>
 										                        		</div>
 										                        	</div>
@@ -727,7 +727,7 @@
 										                        		<div class="col-sm-9">
 										                        			<div class="input-group">
 										                        				<input type="text" name="sell_asset_total" id="sell_asset_total" readonly value="0" class="form-control disabled" />
-										                        				<span class="input-group-addon">NXT</span>
+										                        				<span class="input-group-addon">NTX</span>
 										                        			</div>
 										                        		</div>
 										                        	</div>
@@ -736,14 +736,14 @@
 										                        		<div class="col-sm-9">
 										                        			<div class="input-group">
 										                        				<input type="text" id="sell_asset_fee" name="sell_asset_fee" value="1" class="form-control" />
-										                        				<span class="input-group-addon">NXT</span>
+										                        				<span class="input-group-addon">NTX</span>
 										                        			</div>
 										                        		</div>
 										                        	</div>
 										                        	<div class="form-group form-group-last">
 										                        		<div class="col-sm-3"></div>
 										                        		<div class="col-sm-9">
-										                        			<button type="button" class="btn btn-primary btn-lg btn-block" id="sell_asset_button" data-toggle="modal" data-target="#asset_order_modal" data-asset="" data-type="Sell">Sell (<span class="asset_name"></span> → NXT)</button>
+										                        			<button type="button" class="btn btn-primary btn-lg btn-block" id="sell_asset_button" data-toggle="modal" data-target="#asset_order_modal" data-asset="" data-type="Sell">Sell (<span class="asset_name"></span> 鈫�NTX)</button>
 										                        		</div>
 										                        	</div>
 										                        </div>
@@ -878,14 +878,14 @@
 							            <label for="settings_amount_warning">Max Amount Warning</label>
 	                        			<div class="input-group" style="width:150px">
 							          		<input type="text" name="amount_warning" id="settings_amount_warning" class="form-control" />
-	                        				<span class="input-group-addon">NXT</span>
+	                        				<span class="input-group-addon">NTX</span>
 	                        			</div>
 							        </div>
 							        <div class="form-group">
 							            <label for="settings_fee_warning">Max Fee Warning</label>
 	                        			<div class="input-group" style="width:150px">
 							          		<input type="text" name="fee_warning" id="settings_fee_warning" class="form-control" />
-	                        				<span class="input-group-addon">NXT</span>
+	                        				<span class="input-group-addon">NTX</span>
 	                        			</div>
 							        </div>
 							        <div class="form-group">
@@ -1098,7 +1098,7 @@
 		                <div class="row" id="rss_news_container">
 		                    <div class="col-md-6">
 		                    	<div class="box box-success">
-					                <div class="box-header"><h3 class="box-title">NxtForum.org</h3></div>
+					                <div class="box-header"><h3 class="box-title">http://bbs.ntxcoin.com</h3></div>
 					                <div class="box-body">
 					            		<div id="nxtforum_news" class="rss_news data-loading"><img src="img/loading_indicator.gif" alt="Loading..." width="32" height="32" /></div>
 					                </div>
@@ -1304,7 +1304,7 @@
 		            </div>
 		            
 					<div class="panel panel-default" id="welcome_panel" style="display:none;max-width:500px;">
-		                <div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Welcome to Nxt</div>
+		                <div class="panel-heading"><span class="glyphicon glyphicon-lock"></span> Welcome to NTX</div>
 		                <div class="panel-body">
 		               		<button class="btn btn-primary" id="registration_cancel" onclick="NRS.showLoginScreen();return false;">Returning User?</button>
 					   		&nbsp;&nbsp;
@@ -1721,7 +1721,7 @@
 							</div>
 							<div class="form-group">
 								<label for="add_contact_account_id">ACCOUNT ID</label>
-								<input type="text" class="form-control" name="account_id" id="add_contact_account_id" placeholder="NXT Account ID" tabindex="2" />
+								<input type="text" class="form-control" name="account_id" id="add_contact_account_id" placeholder="NTX Account ID" tabindex="2" />
 							</div>
 							<div class="form-group">
 								<label for="add_contact_email">EMAIL ADDRESS</label>
@@ -1762,7 +1762,7 @@
 							</div>
 							<div class="form-group">
 								<label for="update_contact_account_id">ACCOUNT ID</label>
-								<input type="text" class="form-control" name="account_id" id="update_contact_account_id" placeholder="NXT Account ID" tabindex="2" />
+								<input type="text" class="form-control" name="account_id" id="update_contact_account_id" placeholder="NTX Account ID" tabindex="2" />
 							</div>
 							<div class="form-group">
 								<label for="update_contact_email">EMAIL ADDRESS</label>
@@ -2034,7 +2034,7 @@ quantity decimal point." data-container="body" style="color:#4CAA6E" ></i></labe
 		    	<div class="modal-content">
 		      		<div class="modal-header">
 		        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        		<h4 class="modal-title">Send NXT</h4>
+		        		<h4 class="modal-title">Send NTX</h4>
 		      		</div>
 			      	<div class="modal-body">			
 						<form role="form">
@@ -2076,11 +2076,11 @@ quantity decimal point." data-container="body" style="color:#4CAA6E" ></i></labe
 						<div class="callout account_info" style="display:none;margin-bottom: 0;"></div>
 					</div>
 		      		<div class="modal-footer" style="margin-top:0;">
-		      			<input type="hidden" name="failure_message" value="An unknown error occured! NXT may or may not be sent." />
+		      			<input type="hidden" name="failure_message" value="An unknown error occured! NTX may or may not be sent." />
 		      			<input type="hidden" name="request_type" value="sendMoney" />
 		      			<input type="hidden" name="converted_account_id" value="" />
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-				        <button type="button" class="btn btn-primary" data-loading-text="Submitting...">Send NXT</button>
+				        <button type="button" class="btn btn-primary" data-loading-text="Submitting...">Send NTX</button>
 		      		</div>
 		    	</div>
 		  	</div>
@@ -2470,7 +2470,7 @@ quantity decimal point." data-container="body" style="color:#4CAA6E" ></i></labe
 						<div class="user_info_modal_content data-never-loading" id="user_info_modal_actions" style="display:none;">
 							<div class="row">
 								<div class="col-xs-6 col-md-6" style="margin-left:auto;margin-right:auto;float:none;">
-									<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#send_money_modal" data-account="">Send NXT</button>
+									<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#send_money_modal" data-account="">Send NTX</button>
 									<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#send_message_modal" data-account="">Send a Message</button>
 									<button type="button" id="user_info_modal_add_as_contact" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#add_contact_modal" data-account="">Add as Contact</button>
 								</div>

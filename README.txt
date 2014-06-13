@@ -9,7 +9,7 @@ or run.bat if using Windows. This will start a java server process, which will
 begin logging its activities to the console. The initialization takes a few
 seconds. When it is ready, you should see the message "NTX server 1.0.0 started
 successfully". Open a browser, without stopping the java process, and go to
-http://localhost:8876 , where the NTX UI should now be available. To stop the
+http://localhost:8886 , where the NTX UI should now be available. To stop the
 application, type Ctrl-C inside the console window.
 
 
@@ -44,7 +44,7 @@ behind a router or a firewall and want to have your node accept incoming peer
 connections, you should setup port forwarding. The server will still work though
 even if only outgoing connections are allowed, so opening this port is optional.
 
-The user interface is available on port 8876. This port also accepts http API
+The user interface is available on port 8886. This port also accepts http API
 requests which other NTX client applications could use.
 
 The blockchain is stored on disk using the H2 embedded database, inside the
@@ -66,20 +66,20 @@ which you see in the console window, but also to a file ntx.log, which gets
 overwritten at restart. In case of an error, the ntx.log file may contain
 helpful information, so include its contents when submitting a bug report.
 
-In addition to the default user interface at http://localhost:8876 , the
+In addition to the default user interface at http://localhost:8886 , the
 following urls are available:
 
-http://localhost:8876/test - a list of all available http API requests, very
+http://localhost:8886/test - a list of all available http API requests, very
 useful for client developers and for anyone who wants to execute commands
 directly using the http interface without going through the browser UI.
 
-http://localhost:8876/test?requestType=<specificRequestType> - same as above,
+http://localhost:8886/test?requestType=<specificRequestType> - same as above,
 but only shows the form for the request type specified.
 
-http://localhost:8876/doc - a javadoc documentation for client developers who
+http://localhost:8886/doc - a javadoc documentation for client developers who
 want to use the Java API directly instead of going through the http interface.
 
-http://localhost:8876/admin.html - some more commonly used commands, using the
+http://localhost:8886/admin.html - some more commonly used commands, using the
 http interface.
 
 
