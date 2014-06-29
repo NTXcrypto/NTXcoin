@@ -147,7 +147,11 @@ final class DbVersion {
                     apply("INSERT INTO peer (address) VALUES " +
                     		"('218.6.145.221'),('218.6.145.222'),('218.6.145.220'),"+
                     		"('node1.ntxcoin.org'),('node2.ntxcoin.org'),('node3.ntxcoin.org'),"+
+                    		"('node4.ntxcoin.org'),('node5.ntxcoin.org'),('node6.ntxcoin.org'),"+
+                    		"('node7.ntxcoin.org'),('node8.ntxcoin.org'),('node9.ntxcoin.org'),"+
                     		"('node1.ntxcoin.com'),('node2.ntxcoin.com'),('node3.ntxcoin.com'),"+
+                    		"('node4.ntxcoin.com'),('node5.ntxcoin.com'),('node6.ntxcoin.com'),"+
+                    		"('node7.ntxcoin.com'),('node8.ntxcoin.com'),('node9.ntxcoin.com'),"+
                     		"('112.124.43.97'),('115.28.52.87'),('115.29.101.0'),"+
                     		"('118.25.5.168'),('112.124.184.2'),('211.149.195.113'),"+
                     		"('211.149.193.216'),('112.126.70.26'),('61.131.37.134'),"+

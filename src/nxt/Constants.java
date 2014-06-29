@@ -57,11 +57,12 @@ public final class Constants {
     public static final int FRACTIONAL_BLOCK = isTestnet ? NQT_BLOCK : 38300;
     public static final int ASSET_EXCHANGE_BLOCK = isTestnet ? NQT_BLOCK : 38350;
     public static final int REFERENCED_TRANSACTION_FULL_HASH_BLOCK = isTestnet ? 0 : 1100;
+    public static final int REFERENCED_TRANSACTION_FULL_HASH_BLOCK_TIMESTAMP = isTestnet ? 0 : 0;
     
 /*    public static final int GENESIS_FORGING_BLOCK = isTestnet ? 2147483647 : 2880;
     public static final int TRANSPARENT_FORGING_BLOCK_7 = isTestnet ? 0 : 2147483647;
-    public static final int NQT_BLOCK = isTestnet ? 0 : 0;
-    public static final int REFERENCED_TRANSACTION_FULL_HASH_BLOCK = isTestnet ? 0 : 1000;*/
+    public static final int NQT_BLOCK = isTestnet ? 0 : 0;*/
+
     
     public static final int VOTING_SYSTEM_BLOCK = isTestnet ? 0 : Integer.MAX_VALUE;
     public static final int DIGITAL_GOODS_STORE_BLOCK = isTestnet ? 0 : Integer.MAX_VALUE;
